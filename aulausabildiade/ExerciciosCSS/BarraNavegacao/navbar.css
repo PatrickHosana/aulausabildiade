@@ -1,0 +1,56 @@
+/* Estilos da barra de navegação */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333; /* Cor de fundo da barra */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Mantém a barra no topo da página */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+/* Links da navegação */
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f0a500; /* Cor do link no hover */
+    border-bottom: 2px solid #f0a500; /* Linha embaixo do link no hover */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}

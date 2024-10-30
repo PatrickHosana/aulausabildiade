@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de Media Queries</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    @media (min-width: 1024px) {
+        body {
+            background-color: #3498db;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        body {
+            background-color: #2ecc71;
+        }
+    }
+
+    @media (max-width: 767px) {
+        body {
+            background-color: #f1c40f;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .section {
+        width: 100%;
+        max-width: 800px;
+        padding: 20px;
+        margin: 10px 0;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="section">
+        <h2>Goku</h2>
+        <p>Goku é o personagem principal da obra.</p>
+    </div>
+    <div class="section">
+        <h2>Vegeta</h2>
+        <p>Vegeta é o principal antagonista da historia.</p>
+    </div>
+    <div class="section">
+        <h2>Gohan</h2>
+        <p>Gohan é o filho do Goku, personagem com maior poder oculto.</p>
+    </div>
+    <div class="section">
+        <h2>Trunks</h2>
+        <p>Trunks é um misterioso persinagem viajante no tempo, ele é filho do Vegeta.</p>
+    </div>
+    <div class="section">
+        <h2>Tenshinhan</h2>
+        <p>Tenshinhan é um suposto Humano que têm um olho a mais, este em sua testa.</p>
+    </div>
+    <div class="section">
+        <h2>Yamcha</h2>
+        <p>Yamcha é um personagem que serve de alivio comico para a obra principal.</p>
+    </div>
+    
+</div
